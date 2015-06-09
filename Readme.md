@@ -60,6 +60,12 @@ Development ([and Deployment](#deployment)) is made simple thanks to [Gulp][gulp
   npm install
   ```
 
+  Also install `gulp` and `bower` globally if you have not yet already:
+
+  ```bash
+  npm install -g gulp bower
+  ```
+
 5. Configure `boot/config.js` with your Google Analytics, MailChimp, and Amazon Web Services credentials.
 
   _For Google Analytics:_
