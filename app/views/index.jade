@@ -1,0 +1,36 @@
+
+//- # index
+
+extends layout
+
+block content
+
+  .site-wrapper
+    .site-wrapper-inner
+      .cover-container
+        .masthead.clearfix
+          .inner
+            h3.masthead-brand
+              i.fa.fa-bolt
+              = " "
+              = config.pageTitle
+            nav
+              ul.nav.masthead-nav
+                li.active: a(href='/') Get Early Access
+                li: a(href='https://github.com/niftylettuce/gulp-aws-splash'): i.fa.fa-github
+                li: a(href='https://twitter.com/niftylettuce'): i.fa.fa-twitter
+        .inner.cover
+          h1.cover-heading= config.pageTitle
+          p.lead= config.pageDescription
+          p.lead Hi
+          form(action=config.mailChimp.actionUrl, method='POST').form-group
+            //- bot prevention
+            input(type='hidden', name=config.mailChimp.hiddenInputName, value='')
+            .input-group
+              input(type='email', name='EMAIL', placeholder='Email Address', required).form-control.input-lg#mailcheck-input
+              .input-group-btn
+                button(type='submit', value='Subscribe', name='subscribe').btn.btn-primary.btn-lg Get Early Access
+          p.lead.hidden#mailcheck-suggestion Did you mean <a href="#" id="mailcheck-a"></a>?
+        .mastfoot
+          .inner
+            p Made by <a href="https://github.com/niftylettuce">@niftylettuce</a>

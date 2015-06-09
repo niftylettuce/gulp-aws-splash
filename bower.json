@@ -1,0 +1,24 @@
+{
+  "name": "gulp-aws-splash",
+  "version": "0.0.1",
+  "homepage": "https://github.com/niftylettuce/gulp-aws-splash",
+  "authors": [
+    "Nick Baugh <niftylettuce@gmail.com>"
+  ],
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "~3.3.4",
+    "font-awesome": "~4.3.0",
+    "jquery": "~2.1.4",
+    "modernizr": "~2.8.3",
+    "mailcheck": "~1.1.0"
+  }
+}
