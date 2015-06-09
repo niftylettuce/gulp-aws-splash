@@ -1,6 +1,7 @@
 
 # Gulp AWS Splash
 
+[![Circle CI][circleci-image]][circleci-url]
 [![MIT License][license-image]][license-url]
 
 **The open-source [LaunchRock][launchrock] alternative.  Build beautiful splash pages to collect emails &amp; more &ndash; primarily focused on _performance_ and _[rapid development][rapid-development]_.  This project is sponsored by [Clevertech][clevertech].**
@@ -195,3 +196,5 @@ If you'd like your project to automatically be built and published to Amazon whe
 [rapid-development]: http://blog.clevertech.biz/post/hyper-focused-projects
 [clevertech]: http://clevertech.biz
 [demo]: https://d1xuiu27pilsh9.cloudfront.net/
+[circleci-image]: https://img.shields.io/circleci/project/niftylettuce/gulp-aws-splash.svg?style=flat
+[circleci-url]: https://circleci.com/gh/niftylettuce/gulp-aws-splash/tree/master

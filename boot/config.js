@@ -78,7 +78,8 @@ exports = module.exports = function() {
       }
     },
 
-    development: {}
+    development: {},
+    test: {}
 
   };
 
