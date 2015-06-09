@@ -77,6 +77,7 @@ gulp.task('less', function() {
 
 gulp.task('bower', function() {
   return bower({
+    force: true,
     directory: './assets/public/bower'
   }).pipe(gulp.dest('./assets/dist/bower'));
 });

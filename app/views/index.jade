@@ -22,7 +22,6 @@ block content
         .inner.cover
           h1.cover-heading= config.pageTitle
           p.lead= config.pageDescription
-          p.lead Hi
           form(action=config.mailChimp.actionUrl, method='POST').form-group
             //- bot prevention
             input(type='hidden', name=config.mailChimp.hiddenInputName, value='')
@@ -33,4 +32,4 @@ block content
           p.lead.hidden#mailcheck-suggestion Did you mean <a href="#" id="mailcheck-a"></a>?
         .mastfoot
           .inner
-            p Made by <a href="https://github.com/niftylettuce">@niftylettuce</a>
+            p Made by <a href="https://github.com/niftylettuce">@niftylettuce</a> &bull; Sponsored by <a href="http://clevertech.biz">Clevertech</a>
