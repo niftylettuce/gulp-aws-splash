@@ -27,7 +27,7 @@ exports = module.exports = function() {
         key: env.AWS_KEY || 'TODO',
         accessKeyId: env.AWS_KEY || 'TODO',
         secret: env.AWS_SECRET || 'TODO',
-        secretAccessKey: env.AWS_KEY || 'TODO',
+        secretAccessKey: env.AWS_SECRET || 'TODO',
         distributionId: env.AWS_DI || 'TODO',
         patternIndex: /^\/index\-[a-f0-9]+\.html(\.gz)*$/gi,
         params: {

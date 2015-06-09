@@ -206,10 +206,6 @@ gulp.task('jade', function() {
 
 gulp.task('publish', function() {
 
-  console.log('settings', settings);
-
-  console.log('aws', settings.aws);
-
   // create a new publisher
   var publisher = awspublish.create(settings.aws);
 
