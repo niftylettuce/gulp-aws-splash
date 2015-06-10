@@ -1,6 +1,7 @@
 
 // # gulpfile
 
+var open = require('open');
 var gls = require('gulp-live-server');
 var cloudfront = require('gulp-cloudfront');
 var awspublish = require('gulp-awspublish');
@@ -255,7 +256,11 @@ gulp.task('default', [ 'build' ]);
 
 gulp.task('server', function() {
   server = gls.new('app.js', undefined, 35729);
-  server.start();
+  // <https://github.com/gimm/gulp-live-server/issues/14#issuecomment-110844827>
+  server.start().then(null, null, function(code) {
+    if (code.indexOf('app booted') !== -1)
+      open('http://localhost:3000');
+  });
 });
 
 gulp.task('watch', [ 'server' ], function() {

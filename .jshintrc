@@ -21,9 +21,9 @@
     "google"
   ],
 
-  "node" : true,
-  "es5" : false,
-  "browser" : true,
+  "node": true,
+  "es5": false,
+  "browser": false,
   "jquery": true,
 
   "boss" : false,

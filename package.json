@@ -7,7 +7,8 @@
     "node": ">= 0.12"
   },
   "scripts": {
-    "prepublish": "npm prune"
+    "prepublish": "npm prune",
+    "postinstall": "./node_modules/.bin/gulp build"
   },
   "dependencies": {
     "body-parser": "^1.12.4",
@@ -50,6 +51,7 @@
     "imagemin-pngquant": "^4.1.0",
     "jshint-stylish": "^2.0.0",
     "mocha": "^2.2.5",
+    "open": "0.0.5",
     "run-sequence": "^1.1.0",
     "through2": "^0.6.5"
   }
