@@ -150,7 +150,7 @@ Development ([and Deployment](#deployment)) is made simple thanks to [Gulp][gulp
     +        distributionId: env.AWS_DI || 'UXCY8BV5VXPSL',
     ```
 
-6. Start `gulp watch` to start watching changes you make locally to the project.  It should automatically open up <http://localhost:3000/> in your default browser for you as well (which is the default development URL).
+6. Run `gulp build`, which will build and bundle assets, then `gulp watch` to start watching changes you make locally to the project.  It should automatically open up <http://localhost:3000/> in your default browser for you as well (which is the default development URL).
 
 
 ## Deployment
