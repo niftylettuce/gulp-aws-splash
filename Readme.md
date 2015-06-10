@@ -157,7 +157,7 @@ Development ([and Deployment](#deployment)) is made simple thanks to [Gulp][gulp
 
 ### Manual
 
-To manually publish changes to your project, simply run `gulp publish`.  That's all you have to do!
+To manually deploy and publish changes to your project, simply run `gulp deploy`.  That's all you have to do!
 
 ### Automated
 
