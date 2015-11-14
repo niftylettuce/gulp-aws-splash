@@ -134,7 +134,7 @@ Development ([and Deployment](#deployment)) is made simple thanks to [Gulp][gulp
     +        accessKeyId: env.AWS_KEY || 'ZFIKXOJ1MKTNVTQ4VPAD',
     -        secret: env.AWS_SECRET || 'TODO',
     +        secret: env.AWS_SECRET || 'j4nIT6KSuuuk01g3q4y+eYsuxtIUvMuoyWTfGV86W',
-    -        secretAccessKey: env.AWS_KEY || 'TODO',
+    -        secretAccessKey: env.AWS_SECRET || 'TODO',
     +        secretAccessKey: env.AWS_SECRET || 'j4nIT6KSuuuk01g3q4y+eYsuxtIUvMuoyWTfGV86W',
     ```
 
