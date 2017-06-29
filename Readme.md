@@ -75,10 +75,10 @@ Development ([and Deployment](#deployment)) is made simple thanks to [Gulp][gulp
 
   3. Copy/paste the generated "Tracking ID" as the value of `googleAnalytics` in `boot/config.js`:
 
-    ```diff
-    -      googleAnalytics: env.GA || 'TODO',
-    +      googleAnalytics: env.GA || '12345678',
-    ```
+```diff
+-      googleAnalytics: env.GA || 'TODO',
++      googleAnalytics: env.GA || '12345678',
+```
 
   _For MailChimp:_
 
@@ -90,19 +90,19 @@ Development ([and Deployment](#deployment)) is made simple thanks to [Gulp][gulp
 
   4. Copy/paste the generated `<form>` action attribute value as the value of `mailChimp.actionUrl` in `boot/config.js`:
 
-    ```diff
-          mailChimp: {
-    -        actionUrl: env.MC_AU || 'TODO',
-    +        actionUrl: env.MC_AU || '//johndoe.us0.list-manage.com/subscribe/post?u=123456789abcdefghijklmno&amp;id=1234567890',
-    ```
+```diff
+      mailChimp: {
+-        actionUrl: env.MC_AU || 'TODO',
++        actionUrl: env.MC_AU || '//johndoe.us0.list-manage.com/subscribe/post?u=123456789abcdefghijklmno&amp;id=1234567890',
+```
 
   5. Copy/paste the generated `<input>` name attribute value as the value of `mailChimp.hiddenInputName` in `boot/config.js` (note that this `<input>` is inside of an `<div>` with `absolute` CSS positioning):
 
-    ```diff
-    -        hiddenInputName: env.MC_HIN || 'TODO'
-    +        hiddenInputName: env.MC_HIN || 'm_4co51234b92a65zb2a52z0221_154363e5def'
-          },
-    ```
+```diff
+-        hiddenInputName: env.MC_HIN || 'TODO'
++        hiddenInputName: env.MC_HIN || 'm_4co51234b92a65zb2a52z0221_154363e5def'
+      },
+```
 
   _For Amazon Web Services:_
 
@@ -114,28 +114,28 @@ Development ([and Deployment](#deployment)) is made simple thanks to [Gulp][gulp
 
   4. Modify `boot/config.js` with your newly created bucket name:
 
-    ```diff
-          params: {
-    -        Bucket: env.AWS_BUCKET || 'TODO'
-    +        Bucket: env.AWS_BUCKET || 'gulp-aws-splash'
-          }
-    ```
+```diff
+      params: {
+-        Bucket: env.AWS_BUCKET || 'TODO'
++        Bucket: env.AWS_BUCKET || 'gulp-aws-splash'
+      }
+```
 
   5. Go to <https://console.aws.amazon.com/iam/home#security_credential> &rarr; Access Keys (Access Key ID and Secret Access Key) &rarr; Create New Access Key.
 
   6. Copy/paste the values of Access Key ID and Secret Access Key to `boot/config.js` (note that you will repeat yourself below, since `gulp-awspublish` and `gulp-cloudfront` call for different configurations):
 
-    ```diff
-          aws: {
-    -        key: env.AWS_KEY || 'TODO',
-    +        key: env.AWS_KEY || 'ZFIKXOJ1MKTNVTQ4VPAD',
-    -        accessKeyId: env.AWS_KEY || 'TODO',
-    +        accessKeyId: env.AWS_KEY || 'ZFIKXOJ1MKTNVTQ4VPAD',
-    -        secret: env.AWS_SECRET || 'TODO',
-    +        secret: env.AWS_SECRET || 'j4nIT6KSuuuk01g3q4y+eYsuxtIUvMuoyWTfGV86W',
-    -        secretAccessKey: env.AWS_SECRET || 'TODO',
-    +        secretAccessKey: env.AWS_SECRET || 'j4nIT6KSuuuk01g3q4y+eYsuxtIUvMuoyWTfGV86W',
-    ```
+```diff
+      aws: {
+-        key: env.AWS_KEY || 'TODO',
++        key: env.AWS_KEY || 'ZFIKXOJ1MKTNVTQ4VPAD',
+-        accessKeyId: env.AWS_KEY || 'TODO',
++        accessKeyId: env.AWS_KEY || 'ZFIKXOJ1MKTNVTQ4VPAD',
+-        secret: env.AWS_SECRET || 'TODO',
++        secret: env.AWS_SECRET || 'j4nIT6KSuuuk01g3q4y+eYsuxtIUvMuoyWTfGV86W',
+-        secretAccessKey: env.AWS_SECRET || 'TODO',
++        secretAccessKey: env.AWS_SECRET || 'j4nIT6KSuuuk01g3q4y+eYsuxtIUvMuoyWTfGV86W',
+```
 
   7. Go to <https://console.aws.amazon.com/cloudfront/home> &rarr; Web &rarr; Get Started &rarr; Create Distribution.
 
@@ -144,10 +144,10 @@ Development ([and Deployment](#deployment)) is made simple thanks to [Gulp][gulp
 
   9. Copy/paste the Distribution ID as the value for `aws.distributionId` in `boot/config.js`:
 
-    ```diff
-    -        distributionId: env.AWS_DI || 'TODO',
-    +        distributionId: env.AWS_DI || 'UXCY8BV5VXPSL',
-    ```
+```diff
+-        distributionId: env.AWS_DI || 'TODO',
++        distributionId: env.AWS_DI || 'UXCY8BV5VXPSL',
+```
 
 6. Run `gulp watch` to start watching changes you make locally to the project.  It should automatically open up <http://localhost:3000/> in your default browser for you as well (which is the default development URL).  Note that you typically don't need to run `gulp build` before running `gulp watch` (since it is in `package.json` as the postinstall script).
 
